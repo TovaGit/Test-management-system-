@@ -1,82 +1,67 @@
-Exam Management System
-Overview
+# Exam Management System
+
+## Overview
 The Exam Management System is a Windows Forms Application designed for creating, editing, and taking exams. It allows users to manage exams and their questions, track progress, and calculate results efficiently.
 
-Features
-System Overview
-Edit Exams
-Take Exam
-Edit Exams
-Creating a New Exam
-Exam Creation:
+## Features
 
-Enter the exam name.
-Add questions with the following details:
-Description
-Type (Yes/No, Multiple Choice, Multiple Answers)
-Answer Options
-Correct Answer
-Score (Total score must be 100%)
-Data Storage:
+### System Overview
+- **Edit Exams**
+- **Take Exam**
 
-Exams and questions are saved as JSON files:
-exams.json
-questions.json
-Questions are saved with a draft status. Once finalized, the exam status changes to "Active".
-Progress Tracking:
+### Edit Exams
 
-A progress bar updates to reflect the total score as questions are added.
-Editing an Exam
-Exam List:
+#### Creating a New Exam
+1. **Enter the exam name.**
+2. **Add questions with the following details:**
+   - Description
+   - Type (Yes/No, Multiple Choice, Multiple Answers)
+   - Answer Options
+   - Correct Answer
+   - Score (Total score must be 100%)
 
-View and manage all exams, including drafts.
-Delete exams from the list.
-Editing Process:
+#### Data Storage
+- Exams and questions are saved as JSON files:
+  - `exams.json`
+  - `questions.json`
+- Questions are saved with a draft status. Once finalized, the exam status changes to "Active".
 
-Access an exam to edit. It becomes a draft upon entry.
-Ensure the total score is 100%. The progress bar helps track this.
-Taking an Exam
-Exam List:
+#### Progress Tracking
+- A progress bar updates to reflect the total score as questions are added.
 
-Only exams with "Active" status are shown.
-Exam Navigation:
+### Editing an Exam
 
-Navigate through questions one at a time using "Next" and "Previous" buttons.
-Track the number of answered questions.
-Completion:
+#### Exam List
+- View and manage all exams, including drafts.
+- Delete exams from the list.
 
-The "Finish" button becomes available after the last question.
-A prompt appears if not all questions are answered, asking for confirmation to finish.
-Result Calculation:
+#### Editing Process
+- Access an exam to edit. It becomes a draft upon entry.
+- Ensure the total score is 100%. The progress bar helps track this.
 
-After finishing, the final score is displayed.
-Detailed feedback on incorrect answers is provided.
-Development Notes
-Error Handling:
+### Taking an Exam
 
-Implement comprehensive error handling throughout the application.
-LINQ Queries:
+#### Exam List
+- Only exams with "Active" status are shown.
 
-Use LINQ for efficient data querying and manipulation.
-Installation
-Clone the repository:
+#### Exam Navigation
+- Navigate through questions one at a time using "Next" and "Previous" buttons.
+- Track the number of answered questions.
 
-bash
-Copy code
-git clone <repository-url>
-Open the solution file in Visual Studio.
+#### Completion
+- The "Finish" button becomes available after the last question.
+- A prompt appears if not all questions are answered, asking for confirmation to finish.
 
-Build and run the application.
+#### Result Calculation
+- After finishing, the final score is displayed.
+- Detailed feedback on incorrect answers is provided.
 
-Usage
-Launch the application.
-Choose between editing exams or taking an exam.
-Follow the prompts to create, edit, or take an exam.
-Contributing
-Contributions are welcome! Please fork the repository and submit pull requests with improvements.
+## Development Notes
+- **Error Handling:** Implement comprehensive error handling throughout the application.
+- **LINQ Queries:** Use LINQ for efficient data querying and manipulation.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Installation
 
-Contact
-For further questions or support, please contact [your-email@example.com].
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
